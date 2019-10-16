@@ -1,17 +1,9 @@
 #!/usr/bin/env python3
 
-
-import sys
-from os import path
 import argparse
 from lib.equation_parser import EquationParser
 from lib.evaluate_equation import EvaluateEquation
-import logging
-import datetime
 
-
-# DO nasty imports
-# sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 """
 Author: Steven Greenup
