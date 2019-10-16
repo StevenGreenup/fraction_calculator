@@ -22,7 +22,7 @@ Write a command line program in the language of your choice that will take opera
 * Improper fractions and whole numbers are also allowed as operands
 
 
-#MUST BE RAN WITH python3
+# MUST BE RAN WITH python3
 
 Example Command Lines
 
