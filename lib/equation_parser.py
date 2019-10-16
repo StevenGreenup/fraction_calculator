@@ -113,6 +113,7 @@ class EquationParser(object):
                 elif operator == "-":
                     number_of_negatives += 1
                 else:
+                    # * and + cannot be in an operand
                     return False
 
         if number_of_slashes > 1 or number_of_negatives > 1:
