@@ -1,5 +1,6 @@
 import unittest
-from lib.equation_parser import EquationParser
+from .equation_parser import EquationParser
+
 
 class TestEquationParser(unittest.TestCase):
 
