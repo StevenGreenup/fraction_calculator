@@ -1,5 +1,6 @@
 # fraction_calculator
 
+
 Author: Steven Greenup
 
 Date: 10.15.19
@@ -21,6 +22,7 @@ Write a command line program in the language of your choice that will take opera
 * Improper fractions and whole numbers are also allowed as operands
 
 
+#MUST BE RAN WITH python3
 Example Command Lines
 
     ./script.py --string_equation "3_1/4 * 5_1/2"
@@ -28,3 +30,9 @@ Example Command Lines
     ./script.py --string_equation "3_1/4 / -5_1/2 - 11/4"
         
     ./script.py --operand1 "3_1/4" --operator "*" --operand2 "3_1/4"
+    
+    
+RUN TESTS
+    
+    cd path/to/fraction_calc
+    python3 -m unittest discover
