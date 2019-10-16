@@ -25,10 +25,12 @@ Write a command line program in the language of your choice that will take opera
 # MUST BE RAN WITH python3
 
 Example Command Lines
-
+    
     ./script.py --string_equation "3_1/4 * 5_1/2"
-    ./script.py --string_equation "3_1/4 / -5 + 11/4"
-    ./script.py --string_equation "3_1/4 / -5_1/2 - 11/4"
+    ./script.py --string_equation "3_1/4 * -5_1/2"
+    ./script.py --string_equation "3_1/4 - 5_1/2 * 11/4"
+    ./script.py --string_equation "3_1/4 / -5_1/2 + 11/4"
+    ./script.py --string_equation "3_1/4"
         
     ./script.py --operand1 "3_1/4" --operator "*" --operand2 "3_1/4"
     
