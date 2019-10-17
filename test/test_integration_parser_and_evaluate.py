@@ -17,7 +17,7 @@ class TestIntegrationEquationParserAndEvaluate(unittest.TestCase):
         return "3_1/2 + 1_3/4"
 
 
-    def test_will_return_correct_constants_from_equation(self):
+    def test_will_properly_evaluate_simple_operand(self):
         equation_parser = EquationParser(string_equation=self.equation_with_singular_sudo_mixed_fraction())
         string_equation = equation_parser.evaluate()
 
@@ -28,7 +28,7 @@ class TestIntegrationEquationParserAndEvaluate(unittest.TestCase):
         self.assertEqual(decimal_number, 3.25)
         self.assertEqual(mixed_number, "3_1/4")
 
-    def test_will_return_correct_constants_from_equation2(self):
+    def test_will_properly_evaluate_a_negative_mixed_number(self):
         equation_parser = EquationParser(string_equation=self.equation_with_singular_sudo_negative_improper_fraction())
         string_equation = equation_parser.evaluate()
 
@@ -39,7 +39,7 @@ class TestIntegrationEquationParserAndEvaluate(unittest.TestCase):
         self.assertEqual(decimal_number, -2.75)
         self.assertEqual(mixed_number, "-2_3/4")
 
-    def test_will_return_correct_constants_from_equation3(self):
+    def test_will_properly_evaluate_a_positive_mixed_number(self):
         equation_parser = EquationParser(string_equation=self.equation_with_singular_sudo_positive_improper_fraction())
         string_equation = equation_parser.evaluate()
 
@@ -50,7 +50,7 @@ class TestIntegrationEquationParserAndEvaluate(unittest.TestCase):
         self.assertEqual(decimal_number, 2.75)
         self.assertEqual(mixed_number, "2_3/4")
 
-    def test_will_return_correct_constants_from_equation4(self):
+    def test_will_properly_evaluate_simple_equation(self):
         equation_parser = EquationParser(string_equation=self.equation_with_two_proper_positive_operands())
         string_equation = equation_parser.evaluate()
 
