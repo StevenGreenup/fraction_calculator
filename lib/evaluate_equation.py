@@ -30,8 +30,6 @@ class EvaluateEquation(object):
         fractional_part_num = abs(num) % den
 
         if fractional_part_num > 0:
-
-
             return ("%s_%s/%s" % (whole_part, fractional_part_num, den))
         else:
             return ("%s" % whole_part)
