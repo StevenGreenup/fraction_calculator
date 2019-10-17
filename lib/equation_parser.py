@@ -96,9 +96,9 @@ class EquationParser(object):
             return False
 
     def _variable_is_a_proper_operand(self, variable):
-        contains_proper_amount_of_numeric_chars = self._operand_contains_proper_number_of_non_numeric_characters(variable)
+        contains_proper_amount_of_non_numeric_chars = self._operand_contains_proper_number_of_non_numeric_characters(variable)
         contains_numbers = self._variable_contains_numbers(variable)
-        if contains_proper_amount_of_numeric_chars and contains_numbers:
+        if contains_proper_amount_of_non_numeric_chars and contains_numbers:
             return True
         else:
             return False
